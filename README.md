@@ -12,7 +12,7 @@ The integration involves setting up a Stripe account, obtaining API keys from St
 Clone the repository from GitHub:
 
 ```
-  https://github.com/geetamamde/Stripe_Payment_Gateway.git
+https://github.com/geetamamde/Stripe_Payment_Gateway.git
 
   cd Stripe_Payment_Gateway
 ```
