@@ -1,0 +1,17 @@
+{% extends "home.html" %}
+
+{% block content %}
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}}</h5>
+      <p class="card-text">{{product.des}}</p>
+      {% comment %} <a href="#" class="btn btn-primary">Buy now</a> {% endcomment %}
+     <form action="/create-checkout-session/{{product.id}}" method="POST">
+        {% csrf_token %}
+        <button type="submit" id="checkout-button">Checkout</button>
+      </form> 
+    </div>
+  </div>
+{% endblock content %}
+
